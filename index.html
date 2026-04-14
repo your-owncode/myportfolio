@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishabh Sharma — Cybersecurity Specialist | NSE 7 | Fortinet | AWS</title>
+<meta name="description" content="Rishabh Sharma — Network Security Expert (NSE 7), AWS Solutions Architect, Fortinet Specialist. 6+ years defending enterprise infrastructure. Based in Surrey, BC, Canada.">
+<meta property="og:title" content="Rishabh Sharma — Cybersecurity Specialist">
+<meta property="og:description" content="NSE 7 | AWS Solutions Architect | Fortinet | SASE | DLP | Zero Trust">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0b0f14;--bg2:#0f1419;--bg3:#131920;--surface:#161d26;
+  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.12);
+  --accent:#2d6cdf;--green:#16a34a;
+  --text:#f1f5f9;--text2:#94a3b8;--text3:#475569;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Inter',-apple-system,sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.6;overflow-x:hidden}
+nav{position:sticky;top:0;z-index:100;background:rgba(11,15,20,0.95);border-bottom:1px solid var(--border);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:0 3rem;height:60px;display:flex;align-items:center;justify-content:space-between}
+.nav-name{font-size:15px;font-weight:600;color:var(--text);letter-spacing:0.3px}
+.nav-name span{color:var(--text3);font-weight:400}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{font-size:13px;color:var(--text3);text-decoration:none;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-status{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--green);font-weight:500}
+.nav-status::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--green);display:block;animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+#hero{padding:5rem 3rem;background:var(--bg);border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:start}
+.hero-eyebrow{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:1.25rem;display:flex;align-items:center;gap:8px}
+.hero-eyebrow::before{content:'';width:20px;height:1px;background:var(--accent);display:block}
+h1{font-family:var(--serif);font-size:clamp(2.8rem,5vw,4.2rem);font-weight:700;line-height:1.1;color:var(--text);margin-bottom:.5rem;letter-spacing:-.5px}
+.hero-title-sub{font-family:var(--serif);font-size:clamp(1.1rem,2vw,1.5rem);font-weight:400;color:var(--text3);margin-bottom:1.75rem;font-style:italic}
+.hero-desc{font-size:15px;color:var(--text2);max-width:560px;line-height:1.8;margin-bottom:2rem;font-weight:400}
+.hero-meta{display:flex;flex-wrap:wrap;gap:1.5rem;margin-bottom:2rem}
+.meta-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text3)}
+.meta-item svg{width:14px;height:14px;flex-shrink:0}
+.hero-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:2.5rem}
+.tag{font-size:11px;font-weight:500;padding:4px 10px;border-radius:4px;letter-spacing:.3px}
+.tag.blue{background:rgba(45,108,223,0.1);color:#60a5fa;border:1px solid rgba(45,108,223,0.2)}
+.tag.gray{background:rgba(255,255,255,0.04);color:var(--text2);border:1px solid var(--border)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{font-size:13px;font-weight:500;padding:10px 22px;border-radius:6px;text-decoration:none;transition:all .2s;letter-spacing:.3px;display:inline-flex;align-items:center;gap:6px}
+.btn-primary{background:var(--accent);color:#fff;border:1px solid var(--accent)}
+.btn-primary:hover{background:#1d5bc7}
+.btn-ghost{background:transparent;color:var(--text2);border:1px solid var(--border2)}
+.btn-ghost:hover{background:var(--surface);color:var(--text)}
+.hero-side{display:flex;flex-direction:column;gap:1rem;min-width:220px}
+.side-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.25rem}
+.side-card-label{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--text3);margin-bottom:.75rem}
+.side-cert{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--border)}
+.side-cert:last-child{border-bottom:none;padding-bottom:0}
+.cert-icon{width:28px;height:28px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;flex-shrink:0;letter-spacing:.5px}
+.ci-ft{background:rgba(247,140,58,.12);color:#f78c3a;border:1px solid rgba(247,140,58,.2)}
+.ci-aws{background:rgba(255,153,0,.1);color:#ff9900;border:1px solid rgba(255,153,0,.2)}
+.ci-cs{background:rgba(27,160,215,.1);color:#1ba0d7;border:1px solid rgba(27,160,215,.2)}
+.cert-name{font-size:12px;color:var(--text2);line-height:1.3}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border-radius:6px;overflow:hidden}
+.stat-box{background:var(--surface);padding:.875rem 1rem}
+.stat-num{font-size:1.5rem;font-weight:600;color:var(--text);line-height:1}
+.stat-lbl{font-size:11px;color:var(--text3);margin-top:3px}
+section{padding:4rem 3rem;border-bottom:1px solid var(--border)}
+section:last-of-type{border-bottom:none}
+.sec-header{margin-bottom:2.5rem}
+.sec-label{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+h2{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--text);line-height:1.2}
+#about{background:var(--bg2)}
+.about-cols{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:start}
+.about-p{font-size:15px;color:var(--text2);line-height:1.85;margin-bottom:1rem}
+.about-p strong{color:var(--text);font-weight:500}
+.divider{height:1px;background:var(--border);margin:1.5rem 0}
+.expertise-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+.exp-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--text2)}
+.exp-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:6px}
+.skills{display:flex;flex-direction:column;gap:14px}
+.skill{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;margin-bottom:4px}
+.skill-label{font-size:12px;color:var(--text2);font-weight:500}
+.skill-pct{font-size:11px;color:var(--text3)}
+.skill-bar{grid-column:1/-1;height:2px;background:rgba(255,255,255,.05);border-radius:2px;overflow:hidden}
+.skill-fill{height:100%;background:var(--accent);border-radius:2px}
+.skill-fill.hi{background:linear-gradient(90deg,var(--accent),#60a5fa)}
+#experience{background:var(--bg)}
+.jobs{display:flex;flex-direction:column;gap:0}
+.job-item{display:grid;grid-template-columns:200px 1fr;gap:2.5rem;padding:2rem 0;border-bottom:1px solid var(--border)}
+.job-item:last-child{border-bottom:none;padding-bottom:0}
+.job-period{font-size:12px;color:var(--accent);font-weight:500;margin-bottom:4px}
+.job-company{font-size:13px;color:var(--text);font-weight:600;margin-bottom:4px}
+.job-loc{font-size:12px;color:var(--text3)}
+.job-title{font-size:16px;font-weight:600;color:var(--text);margin-bottom:.75rem}
+.job-tags{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:1rem}
+.job-tag{font-size:10px;padding:2px 7px;border-radius:3px;background:rgba(255,255,255,.04);color:var(--text3);border:1px solid var(--border);letter-spacing:.3px}
+.job-bullets{list-style:none;display:flex;flex-direction:column;gap:7px}
+.job-bullets li{font-size:13.5px;color:var(--text2);padding-left:14px;position:relative;line-height:1.65}
+.job-bullets li::before{content:'—';position:absolute;left:0;color:var(--text3);font-size:11px;top:2px}
+#certifications{background:var(--bg2)}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1px;background:var(--border);border-radius:8px;overflow:hidden}
+.cert-item{background:var(--surface);padding:1.5rem;transition:background .2s}
+.cert-item:hover{background:var(--bg3)}
+.cert-vendor{font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.cv-fortinet{color:#f78c3a}.cv-aws{color:#ff9900}.cv-cisco{color:#1ba0d7}.cv-ms{color:#00a4ef}
+.cert-name{font-size:14px;font-weight:500;color:var(--text);line-height:1.4}
+#contact{background:var(--bg3)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-intro{font-size:15px;color:var(--text2);line-height:1.8;margin-bottom:2rem}
+.contact-links{display:flex;flex-direction:column;gap:12px}
+.contact-link{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--text2);text-decoration:none;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:6px;transition:all .2s;font-weight:500}
+.contact-link:hover{border-color:var(--border2);color:var(--text)}
+.cl-icon{width:36px;height:36px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.cli-email{background:rgba(45,108,223,0.1)}.cli-li{background:rgba(0,119,181,0.1)}.cli-ph{background:rgba(22,163,74,0.1)}
+.avail-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.75rem;margin-bottom:1.5rem}
+.avail-status{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--text);margin-bottom:.75rem}
+.avail-dot{width:8px;height:8px;border-radius:50%;background:var(--green);flex-shrink:0}
+.avail-detail{font-size:13px;color:var(--text2);line-height:1.6}
+.lang-list{display:flex;flex-direction:column;gap:8px}
+.lang-item{display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.lang-name{color:var(--text2)}.lang-level{color:var(--text3);font-size:12px}
+footer{background:var(--bg);padding:1.5rem 3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;border-top:1px solid var(--border)}
+footer p{font-size:12px;color:var(--text3)}
+@media(max-width:860px){
+  nav{padding:0 1.25rem}.nav-links{display:none}
+  #hero{grid-template-columns:1fr;padding:3rem 1.25rem}.hero-side{display:none}
+  section{padding:3rem 1.25rem}
+  .about-cols,.contact-grid{grid-template-columns:1fr;gap:2rem}
+  .job-item{grid-template-columns:1fr;gap:.5rem}
+  footer{padding:1.25rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-name">Rishabh Sharma <span>— Cybersecurity</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-status">Available for opportunities</div>
+</nav>
+
+<section id="hero">
+  <div class="hero-main">
+    <div class="hero-eyebrow">Network Security Expert · NSE 7</div>
+    <h1>Rishabh<br>Sharma</h1>
+    <p class="hero-title-sub">Technical Support Specialist II at Fortinet</p>
+    <p class="hero-desc">Cybersecurity professional with 6+ years protecting enterprise infrastructure across APAC, EMEA, and North America. Specializing in next-generation firewall architecture, SASE, zero-trust network access, and AI-assisted threat operations.</p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Surrey, BC, Canada
+      </div>
+      <div class="meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        info@rishabh.ca
+      </div>
+      <div class="meta-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 10.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.05 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        +1 (343) 987-0784
+      </div>
+    </div>
+    <div class="hero-tags">
+      <span class="tag blue">Fortinet NSE 7</span>
+      <span class="tag blue">AWS Solutions Architect</span>
+      <span class="tag blue">CCNA</span>
+      <span class="tag gray">SASE</span>
+      <span class="tag gray">Zero Trust</span>
+      <span class="tag gray">DLP</span>
+      <span class="tag gray">FortiGate</span>
+      <span class="tag gray">Sophos XG</span>
+      <span class="tag gray">Azure</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Get in Touch
+      </a>
+      <a href="https://www.linkedin.com/in/rishabhsharma-941a0213b" class="btn btn-ghost" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn Profile
+      </a>
+    </div>
+  </div>
+  <div class="hero-side">
+    <div class="stat-grid">
+      <div class="stat-box"><div class="stat-num">6+</div><div class="stat-lbl">Years experience</div></div>
+      <div class="stat-box"><div class="stat-num">NSE 7</div><div class="stat-lbl">Top cert level</div></div>
+      <div class="stat-box"><div class="stat-num">3</div><div class="stat-lbl">Global regions</div></div>
+      <div class="stat-box"><div class="stat-num">7</div><div class="stat-lbl">Certifications</div></div>
+    </div>
+    <div class="side-card">
+      <div class="side-card-label">Key Certifications</div>
+      <div class="side-cert"><div class="cert-icon ci-ft">NSE7</div><div class="cert-name">Fortinet NSE 7 Expert</div></div>
+      <div class="side-cert"><div class="cert-icon ci-aws">SAA</div><div class="cert-name">AWS Solutions Architect</div></div>
+      <div class="side-cert"><div class="cert-icon ci-cs">CCNA</div><div class="cert-name">Cisco CCNA</div></div>
+      <div class="side-cert"><div class="cert-icon ci-ft">FCA</div><div class="cert-name">Fortinet Certified Associate</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="sec-header"><div class="sec-label">Professional Profile</div><h2>About Me</h2></div>
+  <div class="about-cols">
+    <div>
+      <p class="about-p">Computer Engineer turned cybersecurity specialist with a deep-rooted focus on <strong>enterprise network defence</strong> and root-cause analysis. Over six years, I've built a reputation for resolving high-severity incidents that others can't — from zero-day firewall vulnerabilities to complex multi-region VPN architecture failures.</p>
+      <p class="about-p">At <strong>Fortinet</strong>, I operate at the NSE 7 level, the Network Security Expert designation, supporting enterprise clients across <strong>APAC, EMEA, and the Americas</strong>. Before Fortinet, I spent nearly two years at Sophos as a Network Security Engineer, owning the full security stack for dozens of enterprise customers.</p>
+      <p class="about-p">I bring a practitioner's command of AI-assisted threat detection, next-gen firewall policy design, SASE frameworks, and zero-trust access — grounded in years of hands-on incident response and customer-facing technical leadership.</p>
+      <div class="divider"></div>
+      <div class="expertise-grid">
+        <div class="exp-item"><div class="exp-dot"></div>Next-Gen Firewall Architecture</div>
+        <div class="exp-item"><div class="exp-dot"></div>SASE &amp; SD-WAN</div>
+        <div class="exp-item"><div class="exp-dot"></div>Zero Trust Network Access</div>
+        <div class="exp-item"><div class="exp-dot"></div>Endpoint DLP</div>
+        <div class="exp-item"><div class="exp-dot"></div>SSL &amp; IPSec VPN</div>
+        <div class="exp-item"><div class="exp-dot"></div>MPLS &amp; Routing</div>
+        <div class="exp-item"><div class="exp-dot"></div>Threat Intelligence</div>
+        <div class="exp-item"><div class="exp-dot"></div>AWS &amp; Azure Cloud Security</div>
+        <div class="exp-item"><div class="exp-dot"></div>Packet Analysis</div>
+        <div class="exp-item"><div class="exp-dot"></div>Penetration Testing</div>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="skill"><div class="skill-label">Network Security &amp; Firewall</div><div class="skill-pct">96%</div><div class="skill-bar"><div class="skill-fill hi" style="width:96%"></div></div></div>
+      <div class="skill"><div class="skill-label">Fortinet Product Suite (NSE 7)</div><div class="skill-pct">94%</div><div class="skill-bar"><div class="skill-fill hi" style="width:94%"></div></div></div>
+      <div class="skill"><div class="skill-label">SASE &amp; Zero Trust</div><div class="skill-pct">90%</div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+      <div class="skill"><div class="skill-label">SSL VPN / IPSec / MPLS</div><div class="skill-pct">91%</div><div class="skill-bar"><div class="skill-fill" style="width:91%"></div></div></div>
+      <div class="skill"><div class="skill-label">DLP &amp; Endpoint Security</div><div class="skill-pct">88%</div><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
+      <div class="skill"><div class="skill-label">AWS / Azure Cloud Security</div><div class="skill-pct">82%</div><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div></div>
+      <div class="skill"><div class="skill-label">Threat Analysis &amp; IDS/IPS</div><div class="skill-pct">87%</div><div class="skill-bar"><div class="skill-fill" style="width:87%"></div></div></div>
+      <div class="skill"><div class="skill-label">Penetration Testing</div><div class="skill-pct">80%</div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="sec-header"><div class="sec-label">Career History</div><h2>Work Experience</h2></div>
+  <div class="jobs">
+    <div class="job-item">
+      <div class="job-left"><div class="job-period">Feb 2025 — Present</div><div class="job-company">Fortinet</div><div class="job-loc">Burnaby, BC, Canada</div></div>
+      <div class="job-right">
+        <div class="job-title">Technical Support Specialist II</div>
+        <div class="job-tags"><span class="job-tag">FortiGate</span><span class="job-tag">SASE</span><span class="job-tag">DLP</span><span class="job-tag">FortiClient EMS</span><span class="job-tag">Escalations</span></div>
+        <ul class="job-bullets">
+          <li>Senior-tier escalation lead for complex enterprise incidents across the full Fortinet portfolio — FortiGate, FortiClient EMS 7.0, FortiAuthenticator, and DLP</li>
+          <li>Collaborate with engineering on zero-day response and product defect triage for Fortune 500 clients globally</li>
+          <li>Drive AI-assisted incident diagnostics using FortiAnalyzer ML anomaly detection, reducing mean time to resolution</li>
+          <li>Primary technical contact for enterprise clients across APAC, EMEA, and North America</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job-item">
+      <div class="job-left"><div class="job-period">Nov 2022 — Feb 2025</div><div class="job-company">Fortinet</div><div class="job-loc">Burnaby, BC, Canada</div></div>
+      <div class="job-right">
+        <div class="job-title">Technical Support Specialist</div>
+        <div class="job-tags"><span class="job-tag">NSE 7</span><span class="job-tag">SD-WAN</span><span class="job-tag">IPSec</span><span class="job-tag">SSL VPN</span><span class="job-tag">MPLS</span></div>
+        <ul class="job-bullets">
+          <li>Achieved NSE 7 (Network Security Expert) — Fortinet's top-tier designation covering advanced threat intelligence, SD-WAN, and enterprise firewall engineering</li>
+          <li>Architected and troubleshot complex SSL VPN, IPSec, MPLS, and SD-WAN overlay deployments for enterprise clients</li>
+          <li>Resolved critical P1 incidents and zero-day vulnerability assessments within strict SLA targets</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job-item">
+      <div class="job-left"><div class="job-period">Apr 2021 — Oct 2022</div><div class="job-company">Sophos</div><div class="job-loc">Canada</div></div>
+      <div class="job-right">
+        <div class="job-title">Network Security Engineer</div>
+        <div class="job-tags"><span class="job-tag">Sophos XG</span><span class="job-tag">Email Gateway</span><span class="job-tag">DLP</span><span class="job-tag">Pen Testing</span><span class="job-tag">WAF</span></div>
+        <ul class="job-bullets">
+          <li>End-to-end deployment of Sophos XG firewalls, Email Gateway, Access Points, and RED devices for enterprise clients across APAC, Middle East, and Europe</li>
+          <li>Configured SSL VPNs, IPSec tunnels, MPLS links, web/application protection, and Sophos Central management at scale</li>
+          <li>Conducted web application security assessments (XSS, CSRF, SQL injection, DoS) and deep packet analysis using Wireshark</li>
+          <li>Managed Endpoint DLP and email security filtering for organisations with 5,000+ end users</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job-item">
+      <div class="job-left"><div class="job-period">Aug 2017 — Aug 2019</div><div class="job-company">Creative Web Creatures</div><div class="job-loc">Ludhiana, India</div></div>
+      <div class="job-right">
+        <div class="job-title">Technical Support Engineer L2</div>
+        <div class="job-tags"><span class="job-tag">Active Directory</span><span class="job-tag">DNS/DHCP</span><span class="job-tag">VLAN</span><span class="job-tag">VPN</span></div>
+        <ul class="job-bullets">
+          <li>Managed corporate infrastructure including Active Directory, DNS, DHCP, VLANs, firewalls, and VPN endpoints</li>
+          <li>Led data centre relocation — full reconfiguration of routing, switching, and security architecture with zero downtime</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="sec-header"><div class="sec-label">Credentials</div><h2>Certifications</h2></div>
+  <div class="certs-grid">
+    <div class="cert-item"><div class="cert-vendor cv-fortinet">Fortinet</div><div class="cert-name">NSE 7 — Network Security Expert</div></div>
+    <div class="cert-item"><div class="cert-vendor cv-fortinet">Fortinet</div><div class="cert-name">FortiClient EMS 7.0 Administrator</div></div>
+    <div class="cert-item"><div class="cert-vendor cv-fortinet">Fortinet</div><div class="cert-name">FortiAuthenticator 6.4 Administrator</div></div>
+    <div class="cert-item"><div class="cert-vendor cv-fortinet">Fortinet</div><div class="cert-name">Fortinet Certified Associate — Cybersecurity</div></div>
+    <div class="cert-item"><div class="cert-vendor cv-aws">Amazon Web Services</div><div class="cert-name">AWS Solutions Architect Associate</div></div>
+    <div class="cert-item"><div class="cert-vendor cv-cisco">Cisco</div><div class="cert-name">CCNA — Routing, Switching &amp; Industrial</div></div>
+    <div class="cert-item"><div class="cert-vendor cv-cisco">EC-Council</div><div class="cert-name">Introduction to IT &amp; Cybersecurity</div></div>
+    <div class="cert-item"><div class="cert-vendor cv-ms">Microsoft</div><div class="cert-name">Azure Cloud Fundamentals</div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="sec-header"><div class="sec-label">Get in Touch</div><h2>Contact</h2></div>
+  <div class="contact-grid">
+    <div>
+      <p class="contact-intro">Open to senior cybersecurity roles, consulting engagements, and enterprise security architecture projects. Based in Surrey, BC — available for remote, hybrid, or on-site arrangements globally.</p>
+      <div class="contact-links">
+        <a href="mailto:info@rishabh.ca" class="contact-link">
+          <div class="cl-icon cli-email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          info@rishabh.ca
+        </a>
+        <a href="https://www.linkedin.com/in/rishabhsharma-941a0213b" class="contact-link" target="_blank">
+          <div class="cl-icon cli-li"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          linkedin.com/in/rishabhsharma-941a0213b
+        </a>
+        <a href="tel:3439870784" class="contact-link">
+          <div class="cl-icon cli-ph"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 10.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012.05 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6z"/></svg></div>
+          +1 (343) 987-0784
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="avail-card">
+        <div class="avail-status"><div class="avail-dot"></div>Currently Available</div>
+        <div class="avail-detail">Open to full-time, contract, and consulting engagements in network security, enterprise firewall architecture, and cybersecurity operations. Able to start with reasonable notice.</div>
+      </div>
+      <div class="side-card">
+        <div class="side-card-label">Languages</div>
+        <div class="lang-list">
+          <div class="lang-item"><span class="lang-name">English</span><span class="lang-level">Professional Working</span></div>
+          <div class="lang-item"><span class="lang-name">Hindi</span><span class="lang-level">Native / Bilingual</span></div>
+          <div class="lang-item"><span class="lang-name">Punjabi</span><span class="lang-level">Native / Bilingual</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Rishabh Sharma. All rights reserved.</p>
+  <p>Surrey, BC, Canada · info@rishabh.ca</p>
+</footer>
+
+</body>
+</html>
